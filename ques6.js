@@ -36,9 +36,9 @@ const specialRev=function(str,l)
             
         }
     }
-    console.log(final)
+    
 return final;
 
 
 }
-specialRev("we should not degrade anyone ","s")
+console.log(specialRev("we should not degrade anyone ","s"));
