@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:white;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #myInput {
+    background-image: url('images/search.png');
+    background-size: 40px 40px;
+    background-position: 1px 2px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: gainsboro;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 3px solid black;
+    margin-bottom: 12px;
+  }
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+      display:inline-block;
+      border:2px solid black;
+      text-decoration-color: black;
+      background-color:linen;
+      margin:10px;
+      margin-left:50px;
+      padding:15px;
+      font-weight: bold;
+      border-radius: 8%;
+      font-size: large;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
